@@ -37,6 +37,7 @@ body{
     display:flex;
     justify-content: center;
     align-self: flex-end;
+    gap: 10px;
 }
 
 ul{
@@ -52,7 +53,6 @@ ul{
     color: white;
     border: none;
     padding: 5px 10px;
-    margin-left: 10px;
     border-radius: 4px;
     cursor: pointer;
     font-size: 12px;
@@ -76,4 +76,51 @@ ul{
     flex: 1;
     overflow-wrap: break-word;
     margin-right: 10px;
+}
+
+#goalInput {
+  flex: 1;
+  padding: 0.6em 0.8em;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  background-color: #fafafa;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+  box-sizing: border-box;
+}
+
+#goalInput:focus {
+  border-color: #3e68ff;
+  box-shadow: 0 0 0 3px rgba(62, 104, 255, 0.3);
+}
+
+#btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6em 1em;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #3e68ff;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: background-color 0.22s ease-in-out,
+              box-shadow 0.22s ease-in-out;
+}
+
+#btn:hover {
+  background-color: #3458cc;
+}
+
+#btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(62, 104, 255, 0.5);
+}
+
+#btn:active {
+  background-color: #2a47a3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
